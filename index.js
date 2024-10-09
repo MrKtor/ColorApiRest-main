@@ -15,7 +15,6 @@ const user = require(__dirname + "/routes/users");
 dotenv.config();
 
 //Conexión a la base de datos MongoDB
-//esperemos que funcione
 mongoose.connect(process.env.DATABASE_URL)
     .then(() => {
         console.log("Conectado a la base de datos");
